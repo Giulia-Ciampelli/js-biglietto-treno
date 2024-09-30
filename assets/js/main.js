@@ -12,3 +12,11 @@ let minorPrice;
 let seniorPrice;
 let age;
 let result;
+
+// raccolta dati
+age = prompt('ciao, inserisci la tua età');
+console.log(age);
+
+if (age => 18) {
+    console.log('code running');
+}
