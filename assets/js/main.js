@@ -11,12 +11,22 @@ let basePrice;
 let minorPrice;
 let seniorPrice;
 let age;
+let distance;
 let result;
 
 // raccolta dati
 age = prompt('ciao, inserisci la tua età');
-console.log(age);
+distance = prompt('ora inserisci la distanza');
 
+// calcolo prezzo per km
+
+
+if (age < 18) {
+    console.log('troppo piccolo');
+}
 if (age >= 18) {
-    console.log('code running');
+    console.log('prezzo pieno');
+}
+if (age >= 65) {
+    console.log('sei pensionato');
 }
