@@ -12,16 +12,15 @@ let minorPrice;
 let seniorPrice;
 let age;
 let distance;
-let distanceKm;
 let result;
 
 // raccolta dati
-age = prompt('ciao, inserisci la tua età');
-distance = Number(prompt('ora inserisci la distanza'));
+age = Number(prompt('ciao, inserisci la tua età'));
+distance = Number(prompt('quanti km devi fare?'));
 
 // calcolo prezzo per km
-distanceKm = distance * 0.21;
-console.log(distanceKm + `€`);
+basePrice = distance * 0.21;
+console.log(basePrice + `€`);
 
 // primi calcoli età
 if (age < 18) {
