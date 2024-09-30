@@ -10,3 +10,5 @@ console.log('im alive');
 let basePrice;
 let minorPrice;
 let seniorPrice;
+let age;
+let result;
