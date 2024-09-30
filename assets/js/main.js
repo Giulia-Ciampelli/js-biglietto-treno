@@ -8,8 +8,8 @@ console.log('im alive');
 
 // dichiarazione variabili
 let basePrice;
-let minorPrice;
-let seniorPrice;
+let minorDiscount;
+let seniorDiscount;
 let age;
 let distance;
 let result;
@@ -20,16 +20,21 @@ distance = Number(prompt('quanti km devi fare?'));
 
 // calcolo prezzo per km
 basePrice = distance * 0.21;
-console.log(basePrice + `€`); // TEST
+// console.log(basePrice.toFixed(2) + `€`); // TEST
+
+// calcolo prezzi per età
+minorDiscount = basePrice * 0.2;
+seniorDiscount = basePrice * 0.4;
 
 // primi calcoli età
 
+
 if (age < 18) {
-    console.log('troppo piccolo'); // TEST
+    console.log(`minorenne`, minorDiscount.toFixed(2) + `€`); // TEST
 }
 if (age >= 18) {
-    console.log('prezzo pieno'); // TEST
+    console.log(`prezzo pieno`, basePrice.toFixed(2) + `€`); // TEST
 }
 if (age >= 65) {
-    console.log('sei pensionato'); // TEST
+    console.log(`pensionato`, seniorDiscount.toFixed(2) + `€`); // TEST
 }
