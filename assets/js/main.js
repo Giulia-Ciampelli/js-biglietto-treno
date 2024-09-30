@@ -17,6 +17,6 @@ let result;
 age = prompt('ciao, inserisci la tua età');
 console.log(age);
 
-if (age => 18) {
+if (age >= 18) {
     console.log('code running');
 }
