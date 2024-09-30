@@ -32,7 +32,7 @@ seniorDiscount = basePrice * 0.4;
 if (age < 18) {
     console.log(`minorenne`, minorDiscount.toFixed(2) + `€`); // TEST
 }
-if (age >= 18) {
+if (age >= 18 && age < 65) {
     console.log(`prezzo pieno`, basePrice.toFixed(2) + `€`); // TEST
 }
 if (age >= 65) {
