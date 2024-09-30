@@ -20,15 +20,16 @@ distance = Number(prompt('quanti km devi fare?'));
 
 // calcolo prezzo per km
 basePrice = distance * 0.21;
-console.log(basePrice + `€`);
+console.log(basePrice + `€`); // TEST
 
 // primi calcoli età
+
 if (age < 18) {
-    console.log('troppo piccolo');
+    console.log('troppo piccolo'); // TEST
 }
 if (age >= 18) {
-    console.log('prezzo pieno');
+    console.log('prezzo pieno'); // TEST
 }
 if (age >= 65) {
-    console.log('sei pensionato');
+    console.log('sei pensionato'); // TEST
 }
