@@ -20,19 +20,18 @@ distance = Number(prompt('quanti km devi fare?'));
 
 // calcolo prezzo per km
 basePrice = distance * 0.21;
-// console.log(basePrice.toFixed(2) + `€`); // TEST
 
 // calcolo sconto prezzi per età
 minorDiscount = basePrice - (basePrice * 0.2);
 seniorDiscount = basePrice - (basePrice * 0.4);
 
-// primi calcoli età
+// elaborazione dati
 if (age < 18) {
-    console.log(`Sconto per minorenni: ${minorDiscount.toFixed(2)} €`); // TEST
+    console.log(`Sconto per minorenni: ${minorDiscount.toFixed(2)} €`);
 }
 if (age >= 18 && age < 65) {
-    console.log(`Prezzo pieno: ${basePrice.toFixed(2)} €`); // TEST
+    console.log(`Prezzo pieno: ${basePrice.toFixed(2)} €`);
 }
 if (age >= 65) {
-    console.log(`Sconto per pensionati: ${seniorDiscount.toFixed(2)} €`); // TEST
+    console.log(`Sconto per pensionati: ${seniorDiscount.toFixed(2)} €`);
 }
